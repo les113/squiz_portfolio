@@ -2,35 +2,36 @@
 /* line 8, ../sass/style.scss */
 .logo {
   max-height: 120px;
-  margin-top: 60px; }
+  margin-top: 200px; }
 
 /* line 12, ../sass/style.scss */
 .client p {
   font-size: 18px; }
 
-/* line 15, ../sass/style.scss */
-.discover {
+/* line 16, ../sass/style.scss */
+.discoverBtn {
   display: inline-block;
   margin-top: 60px;
   border: solid 3px #fff;
   font-size: 24px;
   padding: 5px 15px; }
 
-/* line 22, ../sass/style.scss */
+/* line 23, ../sass/style.scss */
 hr {
   margin: 20px 50px;
   border: 0;
   height: 0;
   border-top: 1px solid white; }
 
-/* line 28, ../sass/style.scss */
+/* line 29, ../sass/style.scss */
 .portfolio {
   position: relative;
   display: inline-block;
   width: 365px;
+  height: 495px;
   margin: 11px; }
 
-/* line 34, ../sass/style.scss */
+/* line 36, ../sass/style.scss */
 .portfolio .client {
   position: absolute;
   display: block;
@@ -44,48 +45,67 @@ hr {
   color: #fff; }
 
 /* background colour based upon position */
-/* line 45, ../sass/style.scss */
+/* line 47, ../sass/style.scss */
 .portfolio:nth-child(3n+1) .client {
   background: rgba(200, 20, 20, 0.8); }
 
-/* line 48, ../sass/style.scss */
+/* line 50, ../sass/style.scss */
 .portfolio:nth-child(3n+2) .client {
   background: rgba(7, 134, 63, 0.8); }
 
-/* line 51, ../sass/style.scss */
+/* line 53, ../sass/style.scss */
 .portfolio:nth-child(3n+3) .client {
   background: rgba(7, 134, 200, 0.8); }
 
-/* line 54, ../sass/style.scss */
+/* line 56, ../sass/style.scss */
 .portfolio:nth-child(3n+1) .client:hover {
   background: rgba(107, 11, 11, 0.8);
   transition: .3s ease-in-out; }
 
-/* line 58, ../sass/style.scss */
+/* line 60, ../sass/style.scss */
 .portfolio:nth-child(3n+2) .client:hover {
   background: rgba(2, 37, 17, 0.8);
   transition: .3s ease-in-out; }
 
-/* line 62, ../sass/style.scss */
+/* line 64, ../sass/style.scss */
 .portfolio:nth-child(3n+3) .client:hover {
   background: rgba(4, 68, 101, 0.8);
   transition: .3s ease-in-out; }
 
-/* image hover effect */
-/* line 67, ../sass/style.scss */
+/* hover effect */
+/* line 69, ../sass/style.scss */
 .portfolio img {
-  -moz-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease; }
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease; }
 
-/* line 70, ../sass/style.scss */
+/* line 72, ../sass/style.scss */
 .portfolio:hover img {
-  transform: scale(1.05); }
+  transform: scale(1.2); }
 
-/* line 73, ../sass/style.scss */
+/* line 75, ../sass/style.scss */
 .portfolio {
   overflow: hidden; }
+
+/* line 78, ../sass/style.scss */
+.discoverBtn, .client hr, .client p {
+  opacity: 0;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease; }
+
+/* line 83, ../sass/style.scss */
+.client:hover .discoverBtn, .client:hover hr, .client:hover p {
+  opacity: 1; }
+/* line 86, ../sass/style.scss */
+.client:hover .logo {
+  margin-top: 60px;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease; }
 
 /* responsive adjustments */
 /* small phones */

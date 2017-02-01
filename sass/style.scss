@@ -7,12 +7,13 @@ $colour3:rgba(7, 134, 200, 0.8);
 /* styles */
 .logo {
 	max-height:120px;
-	margin-top:60px;
+	margin-top:200px;
 }
 .client p {
 	font-size:18px;
 }
-.discover {
+
+.discoverBtn {
 	display: inline-block;
 	margin-top:60px;
 	border:solid 3px #fff;
@@ -29,6 +30,7 @@ hr {
 	position:relative;
 	display:inline-block;
 	width:365px;
+	height:495px;
 	margin:11px;
 }
 .portfolio .client {
@@ -63,17 +65,29 @@ hr {
     background:darken($colour3,20%);
 	transition: .3s ease-in-out;
 }
-/* image hover effect */ 
+/* hover effect */ 
 .portfolio img {
-  @include transition (all .3s ease);
+  @include transition (all 1s ease);
 }
 .portfolio:hover img{
-  transform: scale(1.05); 
+  transform: scale(1.2); 
   }
 .portfolio {
 	overflow:hidden;
 }
-
+.discoverBtn, .client hr, .client p,  {
+	opacity:0;
+	@include transition (all 1s ease);
+}
+.client:hover {
+	.discoverBtn, hr, p  {
+		opacity:1;
+	}
+	.logo {
+		margin-top:60px;	
+		@include transition (all 1s ease);
+	}
+}
 
 
 
